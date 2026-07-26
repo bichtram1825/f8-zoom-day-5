@@ -91,3 +91,124 @@ body {
     font-weight: 900;
     display: inline-block;
 }
+
+
+.form-page {
+    background-image: url(https://img.magnific.com/free-vector/gradient-monochromatic-abstract-background_52683-74300.jpg?semt=ais_hybrid&w=740&q=80);
+    width: 100%;
+}
+
+.form-page h1 {
+    color: green;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+.title {
+    background-color: white;
+    padding: 10px 30px;
+    margin-block: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    border-radius: 30px;
+}
+
+.form {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.form:focus-within {
+    background: rgb(239, 239, 239);
+}
+
+.form .form-group {
+    margin-bottom: 10px;
+    
+}
+
+.form label {
+    font-size: 1.2rem;
+}
+
+.form .form-label {
+    color: green;
+    font-weight: 500;
+    display: block;
+}
+
+.form .avatar-group {
+    text-align: center;
+}
+
+.form .avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form .form-input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form .form-input:focus {
+    outline: none; 
+    border: 2px solid green;
+}
+
+.form label:has( + input:required)::after  {
+    content: "(*)";
+    color: red;
+    font-size: 0.8rem;
+    vertical-align: super;
+}
+
+.form .form-input:invalid:not(:placeholder-shown) {
+    outline: none; 
+    border: 2px solid red;
+}
+
+.form .form-vertical label{
+    display: block;
+}
+
+.form .form-vertical input {
+    font-weight: 600;
+}
+
+.form .btn {
+    font-size: 1.5rem;
+    color: white;
+    background-color: green;
+    text-align: center;
+    min-width: 100px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form .btn:hover {
+    color: black;
+    background: white;
+    border: 2px solid green;
+}
+
+.form .btn:active {
+    color: red;
+    background: white;
+    border: 2px solid currentColor;
+}
+
+.form .form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
