@@ -5,6 +5,8 @@ body {
     line-height: 1.6;
 }
 
+
+/* INDEX */
 .index-page {
     background: rgb(154, 238, 255);
 }
@@ -44,13 +46,14 @@ body {
     color: red;
 }
 
+
+/* MENU */
 .menu-page {
     background-image: url(https://storage.needpix.com/rsynced_images/light-blue-background.jpg);
 }
 
 .menu {
     background: rgb(104, 203, 230);
-    padding: 0 30px;
     text-align: center;
 }
 
@@ -71,7 +74,7 @@ body {
     color: black;
     font-size: 1.5rem;
     font-weight: 500;
-    padding: 30px 10px;
+    padding: 0px 10px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -93,6 +96,7 @@ body {
 }
 
 
+/* FORM */
 .form-page {
     background-image: url(https://img.magnific.com/free-vector/gradient-monochromatic-abstract-background_52683-74300.jpg?semt=ais_hybrid&w=740&q=80);
     width: 100%;
@@ -211,4 +215,154 @@ body {
 .form .form-footer {
     margin-top: 20px;
     text-align: center;
+}
+
+
+/* PRICING-TABLE */
+.pricing-page {
+    text-align: center;
+    color: white;
+    background-color: #010039; 
+    background-size:cover;
+}
+
+.pricing h1 {
+    color: #5600d4;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .pricing h1 {
+        color: transparent;
+        background: linear-gradient(to right, #3300fc, #95008a, #eb0000);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}  
+
+.pricing .table {
+    display: inline-block;
+}
+
+.pricing .card {
+    background-color: #fff;
+    color: #010039;
+    display: inline-block;
+    width: 300px;
+    height: 100%;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-inline: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.pricing .card:hover {
+    box-shadow: 0px 0px 50px white;
+    margin-top: 40px;
+    
+}
+
+.pricing .card:nth-child(2):hover {
+    box-shadow: 0px 10px 60px yellow;
+    margin-top: 10px;
+}
+
+.pricing .table  h2 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pricing h2 span {
+    display: block;
+    font-size: 2rem; 
+    font-weight: 800;
+}
+
+.pricing h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: -45px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: white;
+
+}
+
+.pricing .basic h2 {
+    background: linear-gradient(#b0005f 30%, #fff);
+}
+
+.pricing .pro h2 {
+    background: linear-gradient(#94008b 30%, #fff);
+}
+
+.pricing .premium h2 {
+    background: linear-gradient(#6400c3 30%, #fff);
+}
+
+.pricing ul {
+    text-align: left;
+    padding-left: 30px ;
+}
+
+.pricing ul .included::before {
+    content: " \f14a ";
+    font-family: "Font Awesome 7 Free";
+    color: yellowgreen;
+    padding-inline: 3px;
+}
+
+.pricing ul .excluded::before {
+    content: " \f057 ";
+    font-family: "Font Awesome 7 Free";
+    color: red;
+    padding-inline: 3px;
+}
+
+.pricing a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-inline: auto;
+    margin-block: 10px;
+}
+
+.pricing .basic a{
+    background: #b0005f;
+}
+
+.pricing .basic a:hover{
+    color: #b0005f;
+    background: #fff;
+    border: 2px solid currentColor;
+}
+
+.pricing .pro a{
+    background: #94008b;
+}
+
+.pricing .pro a:hover{
+    color: #94008b;
+    background: #fff;
+    border: 2px solid currentColor;
+
+}
+
+.pricing .premium a{
+    background: #6400c3;
+}
+
+.pricing .premium a:hover{
+    color: #6400c3;
+    background: #fff;
+    border: 2px solid currentColor;
 }
