@@ -311,17 +311,17 @@ body {
 }
 
 .pricing ul .included::before {
-    content: " \f14a ";
+    content: " \f058 ";
     font-family: "Font Awesome 7 Free";
     color: yellowgreen;
-    padding-inline: 3px;
+    padding-inline: 5px;
 }
 
 .pricing ul .excluded::before {
     content: " \f057 ";
     font-family: "Font Awesome 7 Free";
     color: red;
-    padding-inline: 3px;
+    padding-inline: 5px;
 }
 
 .pricing a {
@@ -365,4 +365,213 @@ body {
     color: #6400c3;
     background: #fff;
     border: 2px solid currentColor;
+}
+
+
+/* BLOG */
+.blog {
+    background-color: rgb(238, 238, 238);
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-block: 20px;
+}
+
+.blog:not(h1) {
+    line-height: 1.4;
+}
+
+.blog .heading {
+    text-align: center;
+}
+
+.blog .heading h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.blog .heading h2 {
+    color:gray;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.blog .heading p {
+    display: inline-block ;
+    color: gray;
+    font-weight: 600;
+    padding-inline: 20px;
+}   
+
+.blog .heading p:not(:last-child)::before {
+    content: "•";
+    padding-inline: 15px;
+}
+
+.blog .heading p a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.blog .heading p a:hover {
+    color: black;
+}
+
+.blog .heading img {
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+.blog .author {
+    display: inline-block;
+    padding: 10px
+}
+
+.blog .author img {
+    height: 100px;
+    width: 100px;
+    padding: 0px  20px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blog .author a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    
+}
+
+.blog .author p {
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.blog  h2 {
+    font-size: 1.5rem;
+    font-weight: 700; 
+    padding: 10px 20px;   
+}
+
+.blog .main p {
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+.blog .main p:first-of-type::first-letter {
+    color: orange;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.blog p::selection {
+    background: grey;
+    color: #fff;
+
+}
+
+.blog .main p::first-line {
+    background-color: blanchedalmond;
+}
+
+.blog .main p:not(:first-of-type)::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+}
+
+.blog .main blockquote {
+    font-weight: 600;
+    font-style: italic;
+    padding: 10px 50px 0 30px;
+    border-left: 2px solid grey;
+    margin-left: 150px;
+}
+
+.blog .main blockquote::before {
+    content: "\f10d";
+    font-family: "Font Awesome 7 Free";
+    display: inline-block;
+}
+
+.blog .content a {
+    font-weight: 600;
+    color: black;
+    
+}
+
+.blog .comment-group {
+    display: flex ;
+}                                                                                   
+
+.blog .comment-label {
+    display: inline-flex ;
+}
+
+.blog .comment-label img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.blog input{ 
+    padding: 20px;
+    margin-block: auto;
+    margin-right: 10px;
+    box-sizing: border-box ;
+}
+
+.blog button {
+    border-color: transparent;
+    cursor: pointer;
+    margin-block: auto; 
+    color: gray;
+}
+
+
+.blog .reader-comment {
+    background-color: #fff;
+    padding-block: 10px;
+}
+
+.blog .reader-comment ul::before {
+    content: "\f007";
+    font-family: "Font Awesome 7 Free";
+}
+
+.blog .reader-comment ul:nth-of-type(odd) {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.blog .reader-comment ul:nth-of-type(even) {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.blog .reader-comment ul li:first-child{
+    font-weight: 700;
+}
+
+
+.blog .reader-comment ul li:last-child{
+    background: #fff;
+    color: gray;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid currentColor;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.blog .reader-comment ul li:last-child:hover {
+    color: black;
+    border: 1px solid currentColor;
+    font-size: 1.1rem;
 }
