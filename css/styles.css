@@ -61,7 +61,17 @@ body {
     display: inline-block;
 }
 
-.menu ul li:not(:last-child)::after{
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 12px 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu ul li::after{
     content: "";
     height:50px;
     border-right: 2px solid black;
@@ -69,18 +79,13 @@ body {
     vertical-align: middle;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 0px 10px;
-    display: inline-block;
-    vertical-align: middle;
+.menu ul li:last-child::after {
+    display: none;
 }
 
 .menu ul li a:hover {
     background-color: #fff;
+    color: #333;
 }
 
 .menu ul li a:active {
@@ -90,7 +95,7 @@ body {
 
 .menu ul li a::before {
     content: "\f0d7 ";
-    font-family: "Font Awesome 7 Free";
+    font-family: "Font Awesome 6 Free";
     font-weight: 900;
     display: inline-block;
 }
@@ -111,7 +116,7 @@ body {
 }
 
 
-.title {
+.form-wrapper {
     background-color: white;
     padding: 10px 30px;
     margin-block: 50px;
@@ -121,13 +126,13 @@ body {
     border-radius: 30px;
 }
 
+.form-wrapper:has(.form:focus-within) {
+    background: rgb(239, 239, 239);
+}
+
 .form {
     padding: 10px;
     border-radius: 30px;
-}
-
-.form:focus-within {
-    background: rgb(239, 239, 239);
 }
 
 .form .form-group {
@@ -251,7 +256,8 @@ body {
     color: #010039;
     display: inline-block;
     width: 300px;
-    height: 100%;
+    min-height: 300px;
+    padding: 20px;
     border-radius: 30px;
     margin-top: 50px;
     margin-inline: 10px;
@@ -263,6 +269,11 @@ body {
     box-shadow: 0px 0px 50px white;
     margin-top: 40px;
     
+}
+
+.pricing .card:nth-child(2) {
+    border: 3px solid #94008b;
+    transform: scale(1.05);
 }
 
 .pricing .card:nth-child(2):hover {
@@ -312,14 +323,14 @@ body {
 
 .pricing ul .included::before {
     content: " \f058 ";
-    font-family: "Font Awesome 7 Free";
+    font-family: "Font Awesome 6 Free";
     color: yellowgreen;
     padding-inline: 5px;
 }
 
 .pricing ul .excluded::before {
     content: " \f057 ";
-    font-family: "Font Awesome 7 Free";
+    font-family: "Font Awesome 6 Free";
     color: red;
     padding-inline: 5px;
 }
@@ -420,7 +431,7 @@ body {
 }
 
 .blog .heading img {
-    display: block;
+    object-fit: cover;
     height: 300px;
     width: 100%;
 }
@@ -463,9 +474,12 @@ body {
 }
 
 .blog .main p:first-of-type::first-letter {
+    font-size: 3rem;
     color: orange;
     font-weight: 800;
-    font-size: 2.5rem;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
 }
 
 .blog p::selection {
@@ -476,12 +490,6 @@ body {
 
 .blog .main p::first-line {
     background-color: blanchedalmond;
-}
-
-.blog .main p:not(:first-of-type)::before {
-    content: " ";
-    display: inline-block;
-    width: 20px;
 }
 
 .blog .main blockquote {
@@ -574,4 +582,10 @@ body {
     color: black;
     border: 1px solid currentColor;
     font-size: 1.1rem;
+}
+
+.blog .reader-comment ul:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
